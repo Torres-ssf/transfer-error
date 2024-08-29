@@ -1,0 +1,23 @@
+{
+  "name": "transfer-error",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "node:run": "fuel-core run --db-path .fuel-core/db --consensus-key 0xa449b1ffee0e2205fa924c6740cc48b3b473aa28587df6dab12abc245d1f5298 --snapshot .fuel-core/configs --debug",
+    "node:clean": "rimraf .fuel-core/db",
+    "test": "vitest --run --coverage false --config vitest.base.mts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "fuels": "^0.94.2",
+    "rimraf": "^6.0.1",
+    "vite": "^5.4.2"
+  }
+}
